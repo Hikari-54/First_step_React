@@ -3,7 +3,7 @@ import aesthetic from '../../assets/Aesthetic.png'
 
 export default function Aesthetic() {
     return (
-        <section class="aesthetic">
+        <section class="aesthetic _margin-bottom-130">
             <img src={aesthetic} alt="Aesthetic ethical drinking" class="aesthetic-background" />
             <div class="aesthetic-background-mask"></div>
 

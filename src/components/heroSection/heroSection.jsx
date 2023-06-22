@@ -3,7 +3,7 @@ import chair from '../../assets/chair.png'
 
 export default function HeroSection() {
     return (
-        <section class="hero-section">
+        <section class="hero-section _margin-bottom-130">
 
             <div class="main-slider">
                 <div class="chair-mask"></div>

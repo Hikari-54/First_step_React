@@ -2,7 +2,7 @@ import './newCollection.css'
 
 export default function NewCollection() {
     return(
-        <section class="new-collection">
+        <section class="new-collection _margin-bottom-130">
 
             <div class="new-collection-text">
                 <h3>Furniture new collection</h3>

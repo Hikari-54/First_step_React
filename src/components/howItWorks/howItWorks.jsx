@@ -5,7 +5,7 @@ import measurments from '../../assets/measurments.png'
 
 export default function HowItWorks(){
     return (
-        <section class="how-it-works">
+        <section class="how-it-works _margin-bottom-130">
 
             <div class="container">
                 <h3>How it works</h3>

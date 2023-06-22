@@ -1,0 +1,63 @@
+.hero-section{
+    width: 100%;
+    height: 815px;
+}
+.main-slider{
+    width: 100%;
+    height: 722px;
+    background-image: url(../../assets/main_slider.png);
+}
+.chair-mask{
+    position: absolute;
+    top: 201px;
+    left: 318px;
+    z-index: 5;
+
+    width: 458px;
+    height: 717px;
+    background-color: #F1D152;
+}
+.chair{
+    position: absolute;
+    left: 170px;
+
+    z-index: 10;
+}
+
+.main-text-flex{
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.main-text{
+    max-width: 635px;
+}
+.main-text .line{
+    width: 185px;
+    height: 1px;
+    background-color: #979797;
+
+    margin: 26px 0;
+}
+.main-text p{
+    color: #5A5A5A;
+}
+.triggers{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 84px;
+    margin-top: 85px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.triggers .normal{
+    width: 8px;
+    height: 8px;
+    background-color: #363838;
+    border-radius: 50%;
+}
+.triggers .active{
+    background-color: #FFEF35;
+}

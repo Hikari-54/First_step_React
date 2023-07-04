@@ -1,21 +1,19 @@
-import { useState } from 'react'
 import './App.css'
-import Header from './components/header/header.jsx'
-import HeroSection from './components/heroSection/heroSection.jsx'
-import NewCollection from './components/newCollection/newCollection.jsx'
-import Aesthetic from './components/aesthetic/aesthetic.jsx'
-import HowItWorks from './components/howItWorks/howItWorks'
+import MainPage from './pages/MainPage'
+import Contact from './pages/Contact'
+import Gallery from './pages/Gallery'
+import Blog from './pages/Blog'
+import { Route, Routes } from 'react-router-dom'
 
 function App() {
   return (
     <>
-      <Header />
-      <main>
-        <HeroSection />
-        <NewCollection />
-        <Aesthetic />
-        <HowItWorks />
-      </main>
+      <Routes>
+        <Route path='/' element={<MainPage />} />
+        <Route path='/gallery' element={<Gallery />} />
+        <Route path='/blog' element={<Blog />} />
+        <Route path='/contact' element={<Contact />} />
+      </Routes>
     </>
   )
 }

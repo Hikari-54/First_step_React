@@ -1,8 +1,10 @@
+import '../index.css'
+import './login.css'
+
 export default function Login() {
     return (
         <>
-            <Header />
-            <div>
+            <div className='container'>
                 <h2>Login</h2>
             </div>
         </>

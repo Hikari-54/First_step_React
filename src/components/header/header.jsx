@@ -1,6 +1,7 @@
 import './header.css'
 import headerLogo from '../../assets/logo.png'
 import headerMenu from '../../assets/icon_menu.svg'
+import { Link } from 'react-router-dom'
 
 export default function Header() {
     
@@ -30,25 +31,23 @@ export default function Header() {
     ]
 
     const linksLeftFormatted = linksLeft.map((l) => {
-        return <a key={l.id} href={l.link} className="header__link-item">{l.title}</a>
+        return <Link key={l.id} to={l.link} className="header__link-item">{l.title}</Link>
     })
     const linksRightFormatted = linksRight.map((l) => {
-        return <a key={l.id} href={l.link} className="header__link-item">{l.title}</a>
+        return <Link key={l.id} to={l.link} className="header__link-item">{l.title}</Link>
     })
     
     return (
         <header>
             <div className="container">
-
                 <div className="header header_space-between">
-
                     <div className='header__fraction'>
                         {linksLeftFormatted}
                     </div>
                     
-                    <a href="#">
+                    <Link to="/login">
                         <img src={headerLogo} alt="logo"/>
-                    </a>
+                    </Link>
 
                     <div className="header__fraction">
                         {linksRightFormatted}
@@ -58,9 +57,7 @@ export default function Header() {
                             </div>
                         </a>
                     </div>
-
-                </div>
-                
+                </div>                
             </div>
         </header>
     )
